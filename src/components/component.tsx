@@ -173,6 +173,8 @@ export function Component() {
       // 这里可以安全地使用 localStorage
       localStorage.setItem('key', 'value');
     }
+     if (ls) return JSON.parse(ls);
+    else return [];
   }, []);
 
   return (
